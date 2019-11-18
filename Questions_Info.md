@@ -1,7 +1,7 @@
 ## Question for Marco
 - Quali databases dovremmo usare?
   - tests, results, species (per raggruppare?), chemicals? (chemicals_carrier? -> per considerare anche il solvente/info su sostanze chimiche)
-  - Dosi? 4 database possibili, conc_type all'interno. Concentrazioni per 3 diverse dosi? Vanno linkate ai results?
+  - Dosi? 4 database possibili, conc_type all'interno. Concentrazioni per 3 diverse dosi? Vanno linkate ai results? **Lasciare perdere**
 - Non capiamo il suffisso *_op* (Operation) su diverse features. Operation ha tanti valori nulli. Ci serve?
 - Link specie <-> organismi in termini di features (Come definire una specie basata su quali features degli organismi)
 - Features degli organismi? età, habitat, species_id, peso, lifestage, gender. Ce ne sono altre? Analizzando le features degli organismi ci siamo accorti che tanti riportano NR in molte caratteristiche. Come ci lavoriamo? (Da considerare anche che vanno riviste come speci)
