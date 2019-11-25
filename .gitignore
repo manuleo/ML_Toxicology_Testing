@@ -1,6 +1,6 @@
 *.class
 *.log
-data/ecotox
+data/*
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
