@@ -37,7 +37,7 @@ def plot_raw_data(ratings):
 
 def plot_train_test_data(train, test):
     """visualize the train and test data."""
-    fig = plt.figure()
+    fig = plt.figure(figsize=(15,8))
     ax1 = fig.add_subplot(1, 2, 1)
     ax1.spy(train, precision=0.01, markersize=0.5)
     ax1.set_xlabel("Users")
