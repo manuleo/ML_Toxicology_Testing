@@ -13,5 +13,7 @@ Enhancing Toxicological Testing through Machine Learning
   - Factorization_Lab.ipynb: factorization using raw functions done in the homeworks (not good results, better consider surprise case).
 - smiles_proc.py: functions to extrapolate data from smiles
 
+All other files can be ignored.
+
 # Authors
 M. Leone, G. Macchi, M. Vicentini, M. Baity-Jesi, K. Schirmer
