@@ -11,7 +11,7 @@ def new_distance_matrix(X_train, X_test = False, cat_features = [], num_features
     X_num_train = X_train[num_features]
     dist_matr_train = np.zeros((X_train.shape[0],X_train.shape[0]))
 
-    for i in range(len(X)):
+    for i in range(len(X_train)):
         for j in range(i):
             dij1 = d1(X_cat_train.iloc[i].values,X_cat_train.iloc[j].values)
             dij2 = d2(X_num_train.iloc[i].values,X_num_train.iloc[j].values)
