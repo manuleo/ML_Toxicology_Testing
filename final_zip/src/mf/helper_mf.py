@@ -84,7 +84,9 @@ def feature_selection_mf(X_train, X_test, X_species, X_cas, singleclass, seed=13
     # Define array of total possible side features
     chemicals, species = _get_poss_side()
     poss_side = species + chemicals
-    
+    poss_side.remove("species")
+    poss_side.remove("test_cas")
+
     # Do all the possible combinations of features (from 0 side features to all)
     for k in range(0, 9):
         print("Starting k =",k)
