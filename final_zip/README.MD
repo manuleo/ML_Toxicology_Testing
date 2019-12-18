@@ -9,10 +9,11 @@ Aim is to predict the **sensibility** of a particular organism with respect to a
 The minimum requirements for the `run.py` are:
 - `Python` (tested on version **_3.5_**)
 - [pip](https://pip.pypa.io/en/stable/) (tested on version *19.3.1*) (For package installation, if needed)
+- `Anaconda` (Test on version *3.18.8*) (More information about Anaconda installation on your OS [here](https://docs.anaconda.com/anaconda/install/)) (For package installation)
+
 - `numpy` (tested on version *1.16.4*)
 - `scikit-learn` (tested on version *0.20.0*)
 - `pandas` (tested on version *0.23.4*)
-- `Anaconda` (Test on version *3.18.8*) (More information about Anaconda installation on your OS [here](https://docs.anaconda.com/anaconda/install/))
 
 **NOTE**: with this configuration, the `run.py` will run **ONLY** with **KNN algorithm and no preprocessing**
 
