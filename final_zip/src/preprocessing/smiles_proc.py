@@ -40,7 +40,7 @@ def count_doubleBond(smile):
     return smile.count('=') 
 
 
-def count_tripleBond(s):
+def count_tripleBond(smile):
     '''
 	Given the smile, this function count the number of triple bonds for each chemical
     Inputs:
