@@ -1,4 +1,4 @@
-# Toxological testing through Machine Learning
+# Toxicological testing through Machine Learning
 
 ## Introduction
 In our project we use a subset of the ECOTOX database and we use **k-Nearest Neighbors (k-NN)** and **Matrix Factorization** algorithms to predict the effect of untested chemicals on tested species and vice versa. 
@@ -10,7 +10,6 @@ The minimum requirements for the `run.py` are:
 - `Python` (tested on version **_3.5_**)
 - [pip](https://pip.pypa.io/en/stable/) (tested on version *19.3.1*) (For package installation, if needed)
 - `Anaconda` (Test on version *3.18.8*) (More information about Anaconda installation on your OS [here](https://docs.anaconda.com/anaconda/install/)) (For package installation)
-
 - `numpy` (tested on version *1.16.4*)
 - `scikit-learn` (tested on version *0.20.0*)
 - `pandas` (tested on version *0.23.4*)
@@ -61,6 +60,12 @@ Optional arguments:
   -feature_sel: Run feature selection on the chosen algorithm. If not set, already selected features will be used.   
   -cross: Run Cross Validation on the chosen algorithm. If not set, already selected best parameters will be used.  
 ```
+Notes about durations:
+- The CV algorithm requires about 12 hours for the KNN and about 24 hours for the MF
+- The feature_selection algorithm requires 2 hour for the KNN and 1 hour for the MF
+(Considering an *Intel Core i7, 3.2 Ghz, 16 GB or RAM*)
+
+Note about requirements: The KNN algorithm requires **from 4 to 6 GB** of free RAM
 
 ## Folder structure
 ```
@@ -92,6 +97,12 @@ Optional arguments:
     └── README.md
 
 ```
+
+## Code reproducibility
+Even if all the random seeds are set in the `run.py`, `turicreate` algorithm to run Matrix Factorization always has a bit of randomness inside the algorithm definition, as state in the [official documentation](https://apple.github.io/turicreate/docs/api/generated/turicreate.recommender.factorization_recommender.create.html#turicreate.recommender.factorization_recommender.create) (`random_seed` parameter).  
+For this reason, the reader is advised that **different runs with the same parameters, and also different runs of CV can produce slightly different results**.  
+The KNN algorithm is instead fully reproducible.
+
 ## Authors
 - Manuel Leone
 - Gabriele Macchi
