@@ -269,11 +269,11 @@ def run_mf(X_train, X_test, X_species, X_cas, lin_regulariz, regulariz, factor, 
     if (singleclass):
         y_pred_test_int = np.where(y_pred_test.to_numpy()>=0.5, 1, 0)
     else:
-        y_pred_test_int = np.rint(y_pred_test_int.to_numpy())
+        y_pred_test_int = np.rint(y_pred_test.to_numpy())
         
     # Compute scores
     rmse = model.evaluate_rmse(X_test, 'score')['rmse_overall']
-    y_test = X_test.select_columns('score')
+    y_test = X_test.select_column('score').to_numpy()
     acc = accuracy_score(y_test, y_pred_test_int)
     
-    return y_pred_train, y_pred_test
+    return y_pred_train, y_pred_test, acc, rmse
