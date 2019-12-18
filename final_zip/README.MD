@@ -26,7 +26,7 @@ conda install -c rdkit rdkit
 *Note*: the `run.py` will work also without `rdkit` if no preprocessing is used. An already preprocessed dataset will be used.
 
 ### Matrix Factorization prerequisites (full installation)
-To run the Matrix Factorization algorithm, the `turicreate` library is mandatory. We tested on version *5.8*. Documentation in the [official website](https://github.com/apple/turicreate).  
+To run the Matrix Factorization algorithm, the `turicreate` library is mandatory. We tested on version *6.0*. Documentation in the [official website](https://github.com/apple/turicreate).  
 **Important: `turicreate` works only with Ubuntu or MacOS and Python up to 3.6** (tested on *3.6*). To use it with Windows, a Windows Subsystem Linux (WSL) with conda installed inside is needed. For more information on its installation, check [this tutorial](https://github.com/kapsakcj/win10-linux-conda-how-to).  
 To install `turicreate`, use pip. The library requires `mxnet` to be used (our tests confirm that using the version *1.1.0* is the most stable one, so we recommend it). We recommend to create a new environment with Python 3.6 to avoid any conflict, following this steps:
 
