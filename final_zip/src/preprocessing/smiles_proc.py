@@ -17,6 +17,7 @@ def atom_number(smile):
 	'''
     return sum(1 for c in smile if c.isupper())
 
+
 def alone_atom_number(smile):
     '''
 	Given the Smile, this function counts the number of atoms, which are seperated from other atoms, in each chemical
@@ -26,6 +27,7 @@ def alone_atom_number(smile):
 		- number of separeted atoms (int): number of separeted atoms in the chemical 
 	''' 
     return smile.count('[') 
+
 
 def count_doubleBond(smile):
     '''
@@ -37,6 +39,7 @@ def count_doubleBond(smile):
 	'''
     return smile.count('=') 
 
+
 def count_tripleBond(s):
     '''
 	Given the smile, this function count the number of triple bonds for each chemical
@@ -46,6 +49,7 @@ def count_tripleBond(s):
 		- number of triple bonds (int): number of triple bonds in the chemical 
 	'''
     return smile.count('#') 
+
     
 def bonds_number(smile):
     '''
@@ -60,6 +64,7 @@ def bonds_number(smile):
         return rdchem.Mol.GetNumBonds(m)
     except:
         return 'NaN'
+
     
 def ring_number(smile):
     '''
@@ -76,8 +81,9 @@ def ring_number(smile):
     except:
         return 'NaN'
 
+
 def Mol(smile):
-	'''
+    '''
 	Given the smile, this function compute the Mol for each Chemical
     Inputs:
         - smile (string): original SMILES code
@@ -89,7 +95,8 @@ def Mol(smile):
         m = Chem.MolFromSmiles(smile)
         return Descriptors.MolWt(m)
     except:
-        return 'NaN'    
+        return 'NaN'  
+	
     
 def MorganDensity(smile):
     '''
