@@ -23,9 +23,8 @@ To run the preprocessing phase the : `rdkit` (Tested on version *2019.09.1*) pac
 To install `rdkit` in your environment use the command
 ```bash/CMD
 conda install -c conda-forge rdkit
-
 ```
-*Note*: the `run.py` will work also without `rdkit` if no preprocessing is used. An already preprocessed dataset will be used 
+*Note*: the `run.py` will work also without `rdkit` if no preprocessing is used. An already preprocessed dataset will be used.
 
 ### Matrix Factorization prerequisites (full installation)
 To run the Matrix Factorization algorithm, the `turicreate` library is mandatory. We tested on version *5.8*. Documentation in the [official website](https://github.com/apple/turicreate).  
