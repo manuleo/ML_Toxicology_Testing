@@ -17,11 +17,11 @@ The minimum requirements for the `run.py` are:
 **NOTE**: with this configuration, the `run.py` will run **ONLY** with **KNN algorithm and no preprocessing**
 
 ### Preprocessing prerequisites 
-To run the preprocessing phase the : `rdkit` (Tested on version *2019.09.2*) package is needed.  
+To run the preprocessing phase the : `rdkit` (Tested on version *2017.09.1*) package is needed.  
 
 To install `rdkit` in your environment use the command
 ```bash/CMD
-conda install -c conda-forge rdkit
+conda install -c rdkit rdkit
 ```
 *Note*: the `run.py` will work also without `rdkit` if no preprocessing is used. An already preprocessed dataset will be used.
 
@@ -36,7 +36,7 @@ conda activate mltox
 pip install --upgrade pip
 pip install -U turicreate
 pip install -U mxnet==1.1.0
-conda install -c conda-forge rdkit
+conda install -c rdkit rdkit
 ```
 (The last step is needed if you want a full installation, able to run also the preprocessing)
 
