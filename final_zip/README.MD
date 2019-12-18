@@ -100,7 +100,8 @@ Note about requirements: The KNN algorithm requires **from 4 to 6 GB** of free R
 
 ## Code reproducibility
 Even if all the random seeds are set in the `run.py`, `turicreate` algorithm to run Matrix Factorization always has a bit of randomness inside the algorithm definition, as state in the [official documentation](https://apple.github.io/turicreate/docs/api/generated/turicreate.recommender.factorization_recommender.create.html#turicreate.recommender.factorization_recommender.create) (`random_seed` parameter).  
-For this reason, **different runs with the same parameters, and also different runs of CV can produce slightly different results**.
+For this reason, the reader is advised that **different runs with the same parameters, and also different runs of CV can produce slightly different results**.  
+The KNN algorithm is instead fully reproducible.
 
 ## Authors
 - Manuel Leone
