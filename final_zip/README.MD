@@ -62,8 +62,9 @@ Optional arguments:
   -cross: Run Cross Validation on the chosen algorithm. If not set, already selected best parameters will be used.  
 ```
 Notes about durations:
-- The CV algorithm requires about 12 hours for the KNN and about 24 hours for the MF
+- The CV algorithm requires about 9 hours for the KNN and about 16 hours for the MF
 - The feature_selection algorithm requires 2 hour for the KNN and 1 hour for the MF
+
 (Considering an *Intel Core i7, 3.2 Ghz, 16 GB or RAM*)
 
 Note about requirements: The KNN algorithm requires **from 4 to 6 GB** of free RAM
