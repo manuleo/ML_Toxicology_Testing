@@ -60,7 +60,7 @@ def mf_algorithm(final_db, feat_sel, cross, singleclass, seed=13):
 
     # Run cross validation if requested
     if (cross):
-        print("Starting CV algorithm. ATTENTION: THIS MAY REQUIRE 24 HOURS TO COMPLETE")
+        print("Starting CV algorithm. ATTENTION: THIS MAY REQUIRE 16 HOURS TO COMPLETE")
         factors = list(range(5, 12, 1))
         regularizs = np.logspace(-12, -1, 30)
         lin_regulars = np.logspace(-12, -1, 30)

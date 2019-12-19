@@ -43,7 +43,7 @@ def knn_algorithm(final_db, feat_sel, cross, singleclass, seed=13):
 
     # Run cross validation if requested
     if (cross):
-        print("Starting CV algorithm. ATTENTION: THIS MAY REQUIRE 12 HOURS TO COMPLETE")
+        print("Starting CV algorithm. ATTENTION: THIS MAY REQUIRE 9 HOURS TO COMPLETE")
         alphas = np.logspace(-3, 0, 30)
         ks = range(1, 5)
         leafs = range(10, 101, 10)
@@ -51,12 +51,12 @@ def knn_algorithm(final_db, feat_sel, cross, singleclass, seed=13):
     else:
         print("CV skipped. Best parameters loaded\n")
         if (singleclass):
-            best_alpha = 0.0016102620275609393
-            best_leaf = 70
+            best_alpha = 0.010826367338740546
+            best_leaf = 80
             best_k = 1
         else:
-            best_alpha = 0.004281332398719396
-            best_leaf = 10
+            best_alpha = 0.017433288221999882
+            best_leaf = 60
             best_k = 1
     print("Best parameters for CV:\n\t-alpha: {}\n\t-k: {}\n\t-leaf_size: {}\n".format(best_alpha, best_k, best_leaf))
     
