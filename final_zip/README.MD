@@ -1,4 +1,4 @@
-# Toxicological testing through Machine Learning
+# Machine Learning for Toxicological Testing
 
 ## Introduction
 In our project we use a subset of the ECOTOX database and we use **k-Nearest Neighbors (k-NN)** and **Matrix Factorization** algorithms to predict the effect of untested chemicals on tested species and vice versa. 
