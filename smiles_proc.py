@@ -20,11 +20,10 @@ def smiles_features(smile):
     return atoms_number , bonds_number, ring_numer
 
 def atom_number(smile):
-    m = Chem.MolFromSmiles(smile)
-    try:
-        return rdchem.Mol.GetNumAtoms(m)
-    except:
-        return 'NaN'
+    return sum(1 for c in smile if c.isupper())
+
+def alone_atom_number(s):
+    return s.count('[') 
     
 def bonds_number(smile):
     m = Chem.MolFromSmiles(smile)
@@ -69,3 +68,9 @@ def to_cas(num):
     s = str(num)
     s = s[:-3]+ '-' + s[-3:-1] +'-' + s[-1]
     return s
+
+def count_doubleBond(s):
+    return s.count('=') 
+
+def count_tripleBond(s):
+    return s.count('#') 
