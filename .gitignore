@@ -1,6 +1,5 @@
 *.class
 *.log
-data/ecotox
 data/*
 
 ### JupyterNotebooks ###
